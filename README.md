@@ -130,13 +130,7 @@ cv2.destroyAllWindows()
 ```
 import cv2
 image = cv2.imread("/content/uiop.jpg")
-text = "OpenCV Drawing"
-position = (10, 50)
-font = cv2.FONT_HERSHEY_SIMPLEX
-font_scale = 1
-color = (204, 51, 255)
-thickness = 2
-res = cv2.putText(image, text, position, font, font_scale, color, thickness, cv2.LINE_AA)
+res = cv2.putText(image, "OpenCV Drawing", (10, 50),cv2.FONT_HERSHEY_SIMPLEX, 1, (204, 51, 255), 2, cv2.LINE_AA)
 cv2_imshow(image)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
